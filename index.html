@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkySmi MD11 Load Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SkySim MD-11 Load Manager</h1>
+    </header>
+    <section id="modo">
+        <input type="button" name="radioSelected" id="buttonPax" value="PAX" onclick="buttonModePress()">
+        <input type="button" name="radioSelected" id="buttonCargo" value="Cargo" onclick="buttonModePress()">
+    </section>
+
+    <section id="section1">
+        <h2>Passanger Mode 293 seats</h2>
+        <div id="teste">
+            <label for="">Total Pax: </label>
+            <input type="text" name="totalPaxOnboad" id="totalPaxOnboad">
+            <input type="button" value="Calular Total" onclick="paxRadom()">
+        </div>
+
+        <div id="first">
+            <label for="">First 16 seats - </label>
+            <input type="text" name="" id="qtdFirst" min="0" max="22">
+            <input type="text" name="" id="firstKg" class="kg" value="kg">
+        </div>
+        <div id="business">
+            <label for="">Business 56 seats- </label>
+            <input type="text" name="" id="qtdBusiness" min="0" max="75">
+            <input type="text" name="" id="businessKg" class="kg" value="kg">
+        </div>
+        <div id="economy">
+            <label for="">Economy 221 seats - </label>
+            <input type="text" name="" id="qtdEconomy" min="0" max="163">
+            <input type="text" name="" id="economyKg" class="kg" value="kg">
+            <div>
+                <button id="botaoCalcular" onclick="calcularPax()">Calcular Pax</button>
+            </div>
+            <div>
+                <label for="">Total Passanger: </label>
+                <div id="totalPax">0</div>
+            </div>
+        </div>
+       
+    <section id="section3">
+        <div id="section3Text"> 
+            <div id="totalCargo1">
+                <label for="">Total Cargo (Max 6463kg) - </label>
+                <input type="text" name="" id="totalCargo">
+                <button onclick="calcularCargoPax()">Calcular</button>
+            </div>
+        
+            <div id="fwdCargo">
+                <label for="">FWD Cargo - </label>
+                <input type="text" name="" id="qtdFWD">
+            </div>
+            <div id="aftCargo">
+                <label for="">AFT Cargo - </label>
+                <input type="text" name="" id="qtdAFT">
+            </div>
+        </div>    
+    </section> 
+
+    </section>
+
+    <section id="section2">
+        <div class="fuel">
+            <label id="textFuelOnboard">Fuel Onboard: </label>
+            <input type="text" name="" id="fuelOnboard" min="0" max="116231">
+            <input type="button" id="calcularFuel" value="Calcular FUEL">
+        </div>
+        <div>
+            <label for="">Center: </label>
+            <div id="fuelCenter" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Left: </label>
+            <div id="fuelLeft" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Rigth: </label>
+            <div id="fuelRigth" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Center 2: </label>
+            <div id="fuelCenter2" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Center 3: </label>
+            <div id="fuelCenter3" class="fuel">0</div>
+        </div>
+    </section>
+
+    <script src="comandos.js"></script>
+    
+</body>
+</html>

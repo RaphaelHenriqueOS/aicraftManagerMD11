@@ -1,0 +1,121 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+}
+
+body {
+    background-image: url("./MD-11.jpg");
+}
+
+input {
+    margin-left: 45px;
+}
+
+#section1 {
+    padding-top: 10px;
+    margin-top: 15p;
+}
+
+#section2 {
+    margin-top: 15px;
+    
+}
+
+#section3 {
+    width: 350px;
+    height: 150px;
+    margin-top: 20px;
+    
+    background-color: rgb(245, 242, 239);
+    opacity: 0.5;
+    border-color: rgb(15, 15, 15);
+    border-style: groove;
+    
+}
+
+#section3Text{
+    margin-left: 10px;
+}
+
+div {
+    margin-top: 5px;
+}
+
+#botaoCalcular {
+    margin-left: 185px;
+    margin-top: 5px;
+}
+
+#qtdFirst {
+    width: 45px;
+}
+
+#qtdBusiness {
+    margin-left: 18px;
+    width: 45px;
+}
+
+#qtdEconomy {
+    margin-left: 3px;
+    width: 45px;
+}
+
+#totalPax {
+    margin-top: -18px;
+    margin-left: 130px;
+    color: red;
+
+}
+
+#totalCargo {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 55px;
+}
+
+#qtdFWD {
+    margin-left: 0px;
+    width: 55px;
+}
+
+#qtdAFT {
+    margin-left: 8px;
+    width: 55px;
+}
+
+.kg{
+    width: 55px;
+}
+
+#section2 {
+    margin-top: 50px;
+
+}
+
+.fuel {
+    margin-top: -18px;
+    margin-left: 130px;
+    ;
+}
+
+#totalCargoInsert {
+    margin-left: 5px;
+}
+
+#frontDeck {
+    margin-left: 25px;
+}
+#middleDeck {
+    margin-left: 14px;
+}
+#backDeck {
+    margin-left: 25px;
+}
+
+input#fwdCargo2 {
+    margin-left: 20px;
+}
+
+input#aftCargo2 {
+    margin-left: 27px;
+}

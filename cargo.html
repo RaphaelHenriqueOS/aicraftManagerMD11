@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkySmi MD11 Load Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SkySim MD-11 Load Manager</h1>
+    </header>
+    <section id="modo">
+        <input type="button" name="radioSelected" id="buttonPax" value="PAX" onclick="buttonModePress()">
+        <input type="button" name="radioSelected" id="buttonCargo" value="Cargo" onclick="buttonModePress()">
+    </section>
+
+    <section id="section1">
+        <h2>Cargo Mode - 33814kg of Cargo Onboard</h2>
+        <div>
+            <label for="">Total Cargo Onboard                                             : </label>
+            <input type="text" name="" id="totalCargoInsert">
+            <button id="botaoCalcularTotalCargo" onclick="calcularCargo()">Calcular Cargo</button>
+        </div>
+        
+        <div id="first">
+            <label for="">Front Deck -  </label>
+            <input type="text" name="" id="frontDeck" min="0" max="22">
+           
+        </div>
+        <div id="business">
+            <label for="">Middle Deck - </label>
+            <input type="text" name="" id="middleDeck" min="0" max="75">
+            
+        </div>
+        <div id="economy">
+            <label for="">Back Deck - </label>
+            <input type="text" name="" id="backDeck" min="0" max="163">
+            
+            <div>
+    
+            </div>
+        <div id="fwdCargo2">
+            <label for="" id="fwdCargo2">FWD Cargo - </label>
+            <input type="text" name="" id="fwdCargo2">
+        </div>
+        <div id="aftCargo2">
+            <label for="" id="aftCargo2" >AFT Cargo - </label>
+            <input type="text" name="" id="aftCargo2">
+        </div>
+
+
+    </section>
+
+    <section id="section2">
+        <div class="fuel">
+            <label id="textFuelOnboard">Fuel Onboard: </label>
+            <input type="text" name="" id="fuelOnboard" min="0" max="116231">
+            <input type="button" id="calcularFuel" value="Calcular FUEL">
+        </div>
+        <div>
+            <label for="">Center: </label>
+            <div id="fuelCenter" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Left: </label>
+            <div id="fuelLeft" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Rigth: </label>
+            <div id="fuelRigth" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Center 2: </label>
+            <div id="fuelCenter2" class="fuel">0</div>
+        </div>
+        <div>
+            <label for="">Center 3: </label>
+            <div id="fuelCenter3" class="fuel">0</div>
+        </div>
+    </section>
+
+    <script src="comandos.js"></script>
+    
+</body>
+</html>
